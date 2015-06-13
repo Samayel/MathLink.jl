@@ -12,7 +12,7 @@ include("consts.jl")
 typealias Env Ptr{Void}
 typealias Link Ptr{Void}
 
-mlib = @osx ? "/Applications/Mathematica.app/Contents/Frameworks/mathlink.framework/mathlink" : "ml64i3"
+mlib = @osx ? "/Applications/Mathematica.app/Contents/Frameworks/mathlink.framework/mathlink" : "libml64i3"
 macro mlib(); mlib; end
 
 function Open(path = "math")
